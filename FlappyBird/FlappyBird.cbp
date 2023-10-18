@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FlappyBird" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FlappyBird" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="allegro/lib/liballegro_monolith-debug.dll.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FlappyBird" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="allegro/lib/liballegro_monolith.dll.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="allegro/include" />
+		</Compiler>
+		<Unit filename="src/AboutWindow/AboutWindow.cpp" />
+		<Unit filename="src/AboutWindow/AboutWindow.h" />
+		<Unit filename="src/Bird/Bird.cpp" />
+		<Unit filename="src/Bird/Bird.h" />
+		<Unit filename="src/GameWindow/GameWindow.cpp" />
+		<Unit filename="src/GameWindow/GameWindow.h" />
+		<Unit filename="src/Game/Game.cpp" />
+		<Unit filename="src/Game/Game.h" />
+		<Unit filename="src/Global/Global.cpp" />
+		<Unit filename="src/Global/Global.h" />
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/MenuWindow/MenuWindow.cpp" />
+		<Unit filename="src/MenuWindow/MenuWindow.h" />
+		<Unit filename="src/Pipe/Pipe.cpp" />
+		<Unit filename="src/Pipe/Pipe.h" />
+		<Unit filename="src/ResultWindow/ResultWindow.cpp" />
+		<Unit filename="src/ResultWindow/ResultWindow.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
